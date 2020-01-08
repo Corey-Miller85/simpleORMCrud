@@ -1,6 +1,6 @@
-Simple CRUD app.
+# Simple CRUD app.
 
-Things I am not understanding.
+## Things I am not understanding.
 
 ```
 const Sequelize = require("sequelize");
@@ -37,7 +37,7 @@ this also fails to work.
 1. What does this option actually do
 2. How could i change the var name so it is not lowercase sequelize?
 
--   Continuing questions
+## Continuing questions
 
 in db/index.js
 
@@ -61,9 +61,9 @@ db.models.Movie = require("./models/movie.js")(sequelize); // this loads the mod
 module.exports = db;
 ```
 
--   But wait... MORE QUESTIONS!
+## But wait... MORE QUESTIONS!
 
-*   in ./db/models/movie.js
+in ./db/models/movie.js
 
 ```
 const Sequelize = require("sequelize");
@@ -83,7 +83,7 @@ module.export = sequelize => {
 1. This is the code that teamTreehouse has shown to be what is needed
     - I am not used to this export syntax, - are we declaring the fucntion name to be sequelize and then exporting it? I am unfamiliar with this type of exporting.
 
--   would it be the same as writting it this way...
+would it be the same as writting it this way...
 
     ```
     const Sequelize = require("sequelize");
@@ -102,6 +102,6 @@ module.export = sequelize => {
     module.exports = sequelize
     ```
 
--   or am I completely off base?
+or am I completely off base?
 
 \_\_ ps I suck at MD, sorry.
